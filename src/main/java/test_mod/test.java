@@ -14,19 +14,20 @@ import test_mod.setup.ClientSetup;
 import test_mod.setup.ModSetup;
 import test_mod.setup.Registration;
 
-import static test_mod.test.MOD_ID;
+import static test_mod.test.MODID;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(MOD_ID)
+@Mod(test.MODID)
 public class test {
 
 
-    public static final String MOD_ID = "test_mod";
+    public static final String MODID = "test_mod";
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
 
     public test() {
+        ModSetup.setup();
         Registration.init();
         // Register the setup method for modloading
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
