@@ -14,11 +14,9 @@ import test_mod.setup.ClientSetup;
 import test_mod.setup.ModSetup;
 import test_mod.setup.Registration;
 
-import static test_mod.test.MODID;
-
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(test.MODID)
-public class test {
+@Mod(Test_mod.MODID)
+public class Test_mod {
 
 
     public static final String MODID = "test_mod";
@@ -26,7 +24,7 @@ public class test {
     private static final Logger LOGGER = LogManager.getLogger();
 
 
-    public test() {
+    public Test_mod() {
         ModSetup.setup();
         Registration.init();
         // Register the setup method for modloading

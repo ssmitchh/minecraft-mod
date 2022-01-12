@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "test_mod:mysterious_ore_overworld",
+    "test_mod:mysterious_ore_nether",
+    "test_mod:mysterious_ore_end",
+    "test_mod:mysterious_ore_deepslate"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "block.test_mod.mysterious_ore_deepslate": "Mysterious ore",
+  "block.test_mod.mysterious_ore_end": "Mysterious ore",
+  "block.test_mod.mysterious_ore_nether": "Mysterious ore",
+  "block.test_mod.mysterious_ore_overworld": "Mysterious ore",
+  "item.test_mod.mysterious_ingot": "Mysterious ingot",
+  "item.test_mod.raw_mysterious_chunk": "Raw Mysterious chunk",
+  "itemGroup.test_mod": "Test"
+}

@@ -4,10 +4,10 @@ import net.minecraft.data.DataGenerator;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
-import test_mod.test;
+import test_mod.Test_mod;
 
 
-@Mod.EventBusSubscriber(modid = test_mod.test.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = Test_mod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 
 public class DataGenerators {
 
