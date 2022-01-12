@@ -15,6 +15,7 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
+
 version = '1.0'
 group = 'com.mcjty.tutorialv3' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'tutorialv3'
@@ -57,7 +58,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                examplemod {
+                test_mod {
                     source sourceSets.main
                 }
             }
@@ -133,8 +134,8 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.18.1-39.0.9'
 
-    compileOnly fg.deobf("mezz.jei:jei-${jei_version}:api")
-    implementation fg.deobf("mezz.jei:jei-${jei_version}")
+//    compileOnly fg.deobf("mezz.jei:jei-${jei_version}:api")
+//    implementation fg.deobf("mezz.jei:jei-${jei_version}")
 
     implementation fg.deobf("curse.maven:the-one-probe-245211:3550084")
 }
@@ -143,12 +144,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "testmod",
-                "Specification-Vendor"    : "testmodsareus",
+                "Specification-Title"     : "test_mod",
+                "Specification-Vendor"    : "test_modsareus",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
-                "Implementation-Vendor"   : "testmodsareus",
+                "Implementation-Vendor"   : "test_modsareus",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
