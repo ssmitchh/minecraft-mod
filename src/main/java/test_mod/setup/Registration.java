@@ -11,10 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.awt.event.InputEvent;
-
-import static net.minecraft.core.QuartPos.fromBlock;
-import static test_mod.test.MODID;
+import static test_mod.Test.MODID;
 
 public class Registration {
 

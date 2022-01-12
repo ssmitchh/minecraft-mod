@@ -1,15 +1,15 @@
 package datagen;
 
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.DataProvider;
 
-public class TestLootTables extends BaseLootTableProvider{
-    public TestLootTables(DataGenerator gen) {
-        super(gen);
+
+public class TestLootTables extends BaseLootTableProvider {
+
+    public TestLootTables(DataGenerator dataGeneratorIn) {
+        super(dataGeneratorIn);
     }
 
     @Override
     protected void addTables() {
-
     }
 }

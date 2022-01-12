@@ -3,13 +3,13 @@ package datagen;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import test_mod.Test;
 import test_mod.setup.Registration;
-import test_mod.test;
 
 public class TestItemModels extends ItemModelProvider {
 
-    public TestItemModels(DataGenerator gen, ExistingFileHelper helper) {
-        super (gen, test.MODID, helper);
+    public TestItemModels(DataGenerator generator, ExistingFileHelper existingFileHelper) {
+        super(generator, Test.MODID, existingFileHelper);
     }
 
     @Override
